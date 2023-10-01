@@ -36,7 +36,7 @@ function result() {
     const weight = `${Math.round(110*0.0714286)} kg`;
     const temperature =  `${Math.round((40-32) * 5 / 9)} 摂氏`;
     newStory = newStory.replace('気温華氏40度', temperature);
-    newStory = newStory.replace('体重110ポンド', weight);
+    newStory = newStory.replace('110ポンド', weight);
   }
 
   story.textContent = newStory;

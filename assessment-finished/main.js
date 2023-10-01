@@ -32,10 +32,10 @@ function result() {
   }
 
   if (document.getElementById("uk").checked) {
-    const weight = `${Math.round(300*0.0714286)} stone`;
+    const weight = `${Math.round(110*0.0714286)} kg`;
     const temperature =  `${Math.round((40-32) * 5 / 9)} centigrade`;
     newStory = newStory.replace('94 fahrenheit', temperature);
-    newStory = newStory.replace('300 pounds', weight);
+    newStory = newStory.replace('110 pounds', weight);
   }
 
   story.textContent = newStory;
